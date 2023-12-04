@@ -1,9 +1,11 @@
 # CryptoTrack
+
 > An iOS application for effortlessly staying updated on the latest cryptocurrency prices.
 
 ## Table of Contents
 
 - [Features](#features)
+- [Demos](#demos)
 - [Technologies](#technologies)
 - [Setup](#setup)
 - [License](#license)
@@ -17,6 +19,12 @@
 3. **Dark Mode Support:** Choose between light and dark themes for comfortable day and night use.
 
 4. **Secure and Reliable:** Prioritize security with the assurance that your data is treated with utmost confidentiality.
+
+## Demos
+
+### Main Home View (Static)
+
+![home view static](./demos/main-ho-home-layout.png)
 
 ## Technologies
 
@@ -32,6 +40,7 @@ To run CryptoTrack locally, follow these steps:
 
    ```bash
    git clone https://github.com/sebastian-nunez/crypto-track
+   ```
 
 ## License
 
