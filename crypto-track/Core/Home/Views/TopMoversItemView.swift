@@ -16,9 +16,10 @@ struct TopMoversItemView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 32, height: 32)
                 .foregroundColor(.orange)
+                .padding(.bottom, 4)
 
             // coin info
-            HStack {
+            HStack(spacing: 2) {
                 Text("BTC")
                     .font(.caption)
                     .fontWeight(.bold)
@@ -27,6 +28,7 @@ struct TopMoversItemView: View {
                     .font(.caption)
                     .foregroundColor(.gray)
             }
+            .padding(.bottom, 1)
 
             // coin % change
             Text("+5.60%") // TODO: updated +/- sign based on price
