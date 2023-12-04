@@ -12,7 +12,8 @@ struct HomeView: View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 // top movers view
-                
+                TopMoversView()
+
                 // all coins view
             }
             .navigationTitle("Live Prices")

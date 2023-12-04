@@ -8,8 +8,22 @@
 import SwiftUI
 
 struct TopMoversView: View {
+    let NUM_MAX_RESULTS = 5
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Text("Top Movers")
+                .font(.headline)
+
+            ScrollView(.horizontal) {
+                HStack(spacing: 16) {
+                    ForEach(0 ..< NUM_MAX_RESULTS, id: \.self) { _ in
+                        TopMoversItemView()
+                    }
+                }
+            }
+        }
+        .padding()
     }
 }
 
