@@ -13,7 +13,7 @@ struct AllCoinsView: View {
             // title
             Text("All Coins")
                 .font(.headline)
-                .padding(.horizontal)
+                .padding()
 
             // labels
             HStack {
@@ -28,6 +28,13 @@ struct AllCoinsView: View {
             .padding(.horizontal)
 
             // item rows
+            ScrollView(.vertical) {
+                VStack {
+                    ForEach(0 ..< 50, id: \.self) { _ in
+                        CoinRowView()
+                    }
+                }
+            }
         }
     }
 }
