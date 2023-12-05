@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9E501A852B1ED5D400745DDF /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E501A842B1ED5D400745DDF /* Coin.swift */; };
+		9E501A882B1F85E200745DDF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9E501A872B1F85E200745DDF /* Kingfisher */; };
 		9EC5F9DB2B1E250300994DC5 /* crypto_trackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5F9DA2B1E250300994DC5 /* crypto_trackApp.swift */; };
 		9EC5F9DF2B1E250600994DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC5F9DE2B1E250600994DC5 /* Assets.xcassets */; };
 		9EC5F9E22B1E250600994DC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC5F9E12B1E250600994DC5 /* Preview Assets.xcassets */; };
@@ -38,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E501A882B1F85E200745DDF /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +167,9 @@
 			dependencies = (
 			);
 			name = "crypto-track";
+			packageProductDependencies = (
+				9E501A872B1F85E200745DDF /* Kingfisher */,
+			);
 			productName = "crypto-track";
 			productReference = 9EC5F9D72B1E250300994DC5 /* crypto-track.app */;
 			productType = "com.apple.product-type.application";
@@ -193,6 +198,9 @@
 				Base,
 			);
 			mainGroup = 9EC5F9CE2B1E250300994DC5;
+			packageReferences = (
+				9E501A862B1F85E100745DDF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 9EC5F9D82B1E250300994DC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -429,6 +437,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9E501A862B1F85E100745DDF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E501A872B1F85E200745DDF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E501A862B1F85E100745DDF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9EC5F9CF2B1E250300994DC5 /* Project object */;
 }
