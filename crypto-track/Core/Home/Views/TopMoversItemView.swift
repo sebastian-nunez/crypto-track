@@ -33,11 +33,10 @@ struct TopMoversItemView: View {
             .padding(.bottom, 1)
 
             // coin % change
-            Text("\(coin.priceChangePercentage24H >= 0 ? "+" : "")\(coin.priceChangePercentage24H)")
+            Text(coin.priceChangePercentage24H.toPercentage())
                 .font(.title2)
                 .foregroundColor(coin.priceChangePercentage24H >= 0 ? .green : .red)
         }
-        .padding(.horizontal, 10)
         .frame(width: 140, height: 140)
         .overlay(
             RoundedRectangle(cornerRadius: 10)
