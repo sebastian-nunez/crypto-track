@@ -5,6 +5,7 @@
 //  Created by Sebastian on 12/4/23.
 //
 
+import Kingfisher
 import SwiftUI
 
 struct CoinRowView: View {
@@ -18,11 +19,10 @@ struct CoinRowView: View {
                 .foregroundColor(.gray)
 
             // image
-            Image(systemName: "bitcoinsign.circle.fill")
+            KFImage(URL(string: coin.image))
                 .resizable()
                 .scaledToFit()
                 .frame(width: 32, height: 32)
-                .foregroundColor(.orange)
 
             // coin name info
             VStack(alignment: .leading, spacing: 4) {

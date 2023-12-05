@@ -5,6 +5,7 @@
 //  Created by Sebastian on 12/4/23.
 //
 
+import Kingfisher
 import SwiftUI
 
 struct TopMoversItemView: View {
@@ -13,11 +14,10 @@ struct TopMoversItemView: View {
     var body: some View {
         VStack(alignment: .leading) {
             // image
-            Image(systemName: "bitcoinsign.circle.fill")
+            KFImage(URL(string: coin.image))
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 32, height: 32)
-                .foregroundColor(.orange)
                 .padding(.bottom, 4)
 
             // coin info
