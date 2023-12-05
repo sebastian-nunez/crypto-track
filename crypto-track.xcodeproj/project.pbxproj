@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9E501A852B1ED5D400745DDF /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E501A842B1ED5D400745DDF /* Coin.swift */; };
 		9E501A882B1F85E200745DDF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9E501A872B1F85E200745DDF /* Kingfisher */; };
+		9E501A8A2B1F87D800745DDF /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E501A892B1F87D800745DDF /* Double.swift */; };
 		9EC5F9DB2B1E250300994DC5 /* crypto_trackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5F9DA2B1E250300994DC5 /* crypto_trackApp.swift */; };
 		9EC5F9DF2B1E250600994DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC5F9DE2B1E250600994DC5 /* Assets.xcassets */; };
 		9EC5F9E22B1E250600994DC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC5F9E12B1E250600994DC5 /* Preview Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		9E501A842B1ED5D400745DDF /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		9E501A892B1F87D800745DDF /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		9EC5F9D72B1E250300994DC5 /* crypto-track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crypto-track.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC5F9DA2B1E250300994DC5 /* crypto_trackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_trackApp.swift; sourceTree = "<group>"; };
 		9EC5F9DE2B1E250600994DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		9EC5F9EB2B1E25B300994DC5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9E501A892B1F87D800745DDF /* Double.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				9EC5F9F72B1E424300994DC5 /* AllCoinsView.swift in Sources */,
 				9EC5F9DB2B1E250300994DC5 /* crypto_trackApp.swift in Sources */,
 				9E501A852B1ED5D400745DDF /* Coin.swift in Sources */,
+				9E501A8A2B1F87D800745DDF /* Double.swift in Sources */,
 				9EC5F9F52B1E300100994DC5 /* TopMoversItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

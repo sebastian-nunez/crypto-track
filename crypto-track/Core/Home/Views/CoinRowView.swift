@@ -42,7 +42,7 @@ struct CoinRowView: View {
 
             // coin price info
             VStack(alignment: .trailing, spacing: 4) {
-                Text("\(coin.currentPrice)")
+                Text(coin.currentPrice.toCurrency())
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .padding(.leading, 4)

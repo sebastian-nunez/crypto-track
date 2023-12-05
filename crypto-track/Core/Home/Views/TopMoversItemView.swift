@@ -26,7 +26,7 @@ struct TopMoversItemView: View {
                     .font(.caption)
                     .fontWeight(.bold)
 
-                Text("\(coin.currentPrice)")
+                Text(coin.currentPrice.toCurrency())
                     .font(.caption)
                     .foregroundColor(.gray)
             }
