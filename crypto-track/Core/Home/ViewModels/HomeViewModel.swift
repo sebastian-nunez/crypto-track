@@ -37,8 +37,14 @@ class HomeViewModel: ObservableObject {
                 return
             }
 
-            let dataAsString = String(data: data, encoding: .utf8)
-            print("DEBUG: Data \(dataAsString ?? "No data available")")
+            // parse the data as JSON
+            do {
+                let coins = try JSONDecoder().decode([Coin].self, from: data)
+                print("DEBUG: Coins \(coins)")
+            } catch {
+                print("DEBUG: Failed to decode coins \(error)")
+            }
+
         }.resume()
     }
 }
