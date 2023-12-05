@@ -18,7 +18,7 @@ struct Coin: Codable {
     let high24H, low24H: Double?
     let marketCapChange24H: Double?
     let marketCapChangePercentage24H: Double?
-    let circulatingSupply, totalSupply, maxSupply, ath: Int?
+    let circulatingSupply, totalSupply, maxSupply, ath: Double?
     let athChangePercentage: Double?
     let athDate: String?
     let atl, atlChangePercentage: Double?
