@@ -15,7 +15,7 @@ struct TopMoversView: View {
             Text("Top Movers")
                 .font(.headline)
 
-            ScrollView(.horizontal) {
+            ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 16) {
                     ForEach(0 ..< NUM_MAX_RESULTS, id: \.self) { _ in
                         TopMoversItemView()
